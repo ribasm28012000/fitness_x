@@ -53,9 +53,12 @@ class OnBoarding1 extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.black,
         onPressed: () {},
-        child: const Icon(Icons.navigate_next),
-      ),
+        // ignore: prefer_const_constructors
+        child: Icon(Icons.add),
+      )
     );
   }
 }

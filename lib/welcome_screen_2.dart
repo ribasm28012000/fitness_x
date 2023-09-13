@@ -13,7 +13,7 @@ class WelcomeScreen2 extends StatelessWidget {
         width: width,
         height: height,
         decoration: ShapeDecoration(
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
             begin: Alignment(-1.00, 0.08),
             end: Alignment(1, -0.08),
             colors: [Color(0xFF92A3FD), Color(0xFF9DCEFF)],
