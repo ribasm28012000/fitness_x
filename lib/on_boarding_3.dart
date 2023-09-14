@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'app_details.dart';
-import 'on_boarding_2.dart';
+import 'on_boarding_4.dart';
 
-class OnBoarding1 extends StatelessWidget {
-  const OnBoarding1({super.key});
+class OnBoarding3 extends StatelessWidget {
+  const OnBoarding3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class OnBoarding1 extends StatelessWidget {
       body: Column(
         children: [
           Image.asset(
-            'assets/onBoarding1.png',
+            'assets/onBoarding3.png',
             height: height * 0.50,
             width: width,
             fit: BoxFit.fill,
@@ -28,7 +28,7 @@ class OnBoarding1 extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        onBoard1Head,
+                        onBoard3Head,
                         style: TextStyle(
                             color: Color(0xFF1D1517),
                             fontSize: 28,
@@ -41,7 +41,7 @@ class OnBoarding1 extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
-                      onBoard1Des,
+                      onBoard3Des,
                       style: TextStyle(
                         color: Color(0xFF7B6F72),
                         fontSize: 16,
@@ -64,7 +64,7 @@ class OnBoarding1 extends StatelessWidget {
           Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const OnBoarding2()));
+                          builder: (context) => const OnBoarding4()));
         },
         child: const Icon(Icons.navigate_next),
       )

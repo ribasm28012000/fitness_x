@@ -1,5 +1,7 @@
-import 'package:fitness_x/on_boarding_1.dart';
+
 import 'package:flutter/material.dart';
+
+import 'on_boarding_1.dart';
 
 class WelcomeScreen2 extends StatelessWidget {
   const WelcomeScreen2({super.key});
@@ -22,80 +24,79 @@ class WelcomeScreen2 extends StatelessWidget {
             borderRadius: BorderRadius.circular(0),
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.only(top: 400),
-          child: Column(
-            children: [
-              const Text.rich(
-                TextSpan(
-                  children: [
-                    TextSpan(
-                      text: 'Fitness',
-                      style: TextStyle(
-                        color: Color(0xFF1D1517),
-                        fontSize: 40,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    TextSpan(
-                      text: 'X',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 55,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(
-                child: Align(
-                  alignment: Alignment.center,
-                  child: Text(
-                    'Everybody Can Train',
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: height*0.40,
+            ),
+            const Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: 'Fitness',
                     style: TextStyle(
-                      color: Color(0xFF7B6F72),
-                      fontSize: 20,
+                      color: Color(0xFF1D1517),
+                      fontSize: 40,
                       fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w400,
+                      fontWeight: FontWeight.w700,
                     ),
+                  ),
+                  TextSpan(
+                    text: 'X',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 55,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              child: Text(
+                'Everybody Can Train',
+                style: TextStyle(
+                  color: Color(0xFF7B6F72),
+                  fontSize: 20,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: height*0.35,
+            ),
+            SizedBox(
+              height: height * 0.07,
+              width: width - 40,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(50))),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const OnBoarding1()));
+                },
+                child: const Text(
+                  'Get Started',
+                  style: TextStyle(
+                    color: Color.fromRGBO(157, 206, 255, 1),
+                    fontSize: 20,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w700,
+                    height: 1.50,
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 300),
-                child: SizedBox(
-                  height: height * 0.08,
-                  width: width - 40,
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      shape: const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(50))),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const OnBoarding1()));
-                    },
-                    child: const Text(
-                      'Get Started',
-                      style: TextStyle(
-                        color: Color.fromRGBO(157, 206, 255, 1),
-                        fontSize: 20,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w700,
-                        height: 1.50,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

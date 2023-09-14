@@ -1,5 +1,6 @@
-import 'package:fitness_x/welcome_screen_2.dart';
 import 'package:flutter/material.dart';
+
+import 'welcome_screen_2.dart';
 
 class WelcomeScreen1 extends StatelessWidget {
   const WelcomeScreen1({super.key});
@@ -56,10 +57,10 @@ class WelcomeScreen1 extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: height* 0.40,
+            height: height* 0.35,
           ),
           SizedBox(
-              height: height * 0.05,
+              height: height * 0.07,
               width: width - 40,
               child: TextButton(
                 style: TextButton.styleFrom(
