@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'app_details.dart';
 import 'welcome_screen_1.dart';
-
+  
 void main() {
   runApp(const WelcomeScreen());
 }
